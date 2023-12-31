@@ -95,3 +95,12 @@ var averageChange = 0;
 var greatestIncrease = 0;
 var greatestDecrease = 0;
 var arrayChanges = [];
+
+for (i = totalMonths - 1; i > 0; i--) {
+  //filling a new array with data on changes in profit/loss for the month
+  arrayChanges[i-1] = [];
+  arrayChanges[i-1][0] = finances[i][0];
+  arrayChanges[i-1][1] = finances[i][1] - finances[i - 1][1];
+  //calculation of the total change in profit/loss for the entire period
+  averageChange += arrayChanges[i-1][1];
+}
