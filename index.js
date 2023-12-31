@@ -96,6 +96,13 @@ var greatestIncrease = 0;
 var greatestDecrease = 0;
 var arrayChanges = [];
 
+totalMonths = finances.length;
+
+//counting the total amount
+for (i = 0; i < totalMonths; i++) {
+  total += finances[i][1];
+}
+
 for (i = totalMonths - 1; i > 0; i--) {
   //filling a new array with data on changes in profit/loss for the month
   arrayChanges[i-1] = [];
