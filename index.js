@@ -84,5 +84,14 @@ var finances = [
   ['Nov-2016', 795914],
   ['Dec-2016', 60988],
   ['Jan-2017', 138230],
-  ['Feb-2017', 671099],
+  ['Feb-2017', 671099]
 ];
+
+//creating all variables
+
+var totalMonths = 0;
+var total = 0;
+var averageChange = 0;
+var greatestIncrease = 0;
+var greatestDecrease = 0;
+var arrayChanges = [];
