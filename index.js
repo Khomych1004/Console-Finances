@@ -116,3 +116,8 @@ for (i = totalMonths - 1; i > 0; i--) {
 averageChange = averageChange / (totalMonths - 1);
 //rounding to two decimal places
 averageChange = parseFloat(averageChange.toFixed(2));
+
+//sorting array from smallest to largest value
+arrayChanges.sort(function(a, b) {
+  return a[1] - b[1];
+});
