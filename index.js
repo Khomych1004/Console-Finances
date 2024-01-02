@@ -121,3 +121,18 @@ averageChange = parseFloat(averageChange.toFixed(2));
 arrayChanges.sort(function(a, b) {
   return a[1] - b[1];
 });
+
+//output all necessary information to the console
+console.log("Financial Analysis");
+
+console.log("----------------------------");
+
+console.log("Total Months: " + totalMonths);
+
+console.log("Total: $" + total);
+
+console.log("Average Change: " + averageChange);
+
+console.log("Greatest Increase in Profits/Losses: " + arrayChanges[arrayChanges.length - 1][0] + " ($" + arrayChanges[arrayChanges.length - 1][1] + ")");
+
+console.log("Greatest Increase in Profits/Losses: " + arrayChanges[0][0] + " ($" + arrayChanges[0][1] + ")");
