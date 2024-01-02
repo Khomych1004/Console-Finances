@@ -111,3 +111,8 @@ for (i = totalMonths - 1; i > 0; i--) {
   //calculation of the total change in profit/loss for the entire period
   averageChange += arrayChanges[i-1][1];
 }
+
+//calculating the average change in profit/loss for the entire period
+averageChange = averageChange / (totalMonths - 1);
+//rounding to two decimal places
+averageChange = parseFloat(averageChange.toFixed(2));
